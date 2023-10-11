@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/styleXDCSTop.css" rel="stylesheet">
+    <title>Champloo-XDCS</title>
+</head>
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+</script>
+<body>
+    <div class="bg">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="hrefXDCS/brief.html">概要</a>
+              <a href="hrefXDCS/VD.html">数据可视化</a>
+              <a href="hrefXDCS/CV.html">计算机视觉</a>
+              <a href="hrefXDCS/alg.html">算法分析与设计</a>
+            </div>
+        </div>
+        <div class="entry" onclick="openNav()">
+          <img
+            src="../img/doll.png"
+            alt="Entry" />
+          <span>点这里&#8600;</span>
+        </div>
+    </div>
+</body>
+</html>

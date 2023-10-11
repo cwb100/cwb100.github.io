@@ -1,0 +1,50 @@
+body {
+    background: rgb(7,45,52);
+    background: linear-gradient(90deg, rgba(7,45,52,1) 20%, rgba(24,81,95,1) 40%, rgba(24,81,95,1) 60%, rgba(7,45,52,1) 80%);
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+}
+
+@font-face{
+    font-family: 'homeHead';
+    src:url(../font/homeHead.otf);
+}
+
+.mid {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    color: #93979e;
+    text-align: center;
+    transition: width .5s ease,height .5s ease;
+}
+
+.headImg{
+    width: 10em;
+}
+
+.headH1{
+    font-size: 1.5em;
+}
+
+.headH4{
+    font-family:'homeHead'
+}
+
+.mid ul li{
+    padding: 20px;
+    list-style: none;
+    transform: translateX(-20px);
+}
+
+li a{
+    text-decoration: none;
+    color: #93979e;
+}
+
+a:hover{
+    color: white;
+}
+
+a:active{
+    color:black;
+}

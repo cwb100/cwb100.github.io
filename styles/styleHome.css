@@ -1,0 +1,68 @@
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(31,94,110,1) 100%);
+    background-repeat: no-repeat;
+    margin: 0;
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+}
+
+@font-face{
+    font-family: 'homeHead';
+    src:url(../font/homeHead.otf);
+}
+
+.home{
+    text-align: left;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h4{
+    text-align: center;
+    font-family: 'homeHead';
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.maina{
+    color:rgb(33, 119, 153);
+}
+
+a:hover{
+    color: white;
+}
+
+a:active{
+    color:black;
+}
+
+.grid {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+dd{
+    padding-top: .5em;
+    padding-bottom: .5em;
+    text-indent: 2em;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    border-bottom: 1px solid rgb(33, 119, 153);
+    margin: 2em 0em 3em 0em;
+}

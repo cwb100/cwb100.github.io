@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../styles/styleXDCSBase.css" rel="stylesheet">
+    <script type="text/javascript" src="../../scripts/XDCSBase.js" async></script>
+    <title>VD</title>
+</head>
+<body>
+    数据可视化
+    <div class="card">
+        <div class="cardHead">
+            <div class="headNavLeft">
+                <img src="../../img/head.jpg" alt="head" class="headImg"/>
+                <a href="../../index.html"><span>Champloo</span></a>
+            </div>
+            <div class="headNavRight">
+                <a href="../XDCS.html"><span class="headText">Way Back Last&#8592;</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div id="menu1">
+            <button class="home tablinks" id="defaultOpen" onclick="openCity(event, 'Home')">Home</button>
+            <button class="accordion">第一次</button>
+            <div class="panel">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'task1section1')">task1section1</button>
+                    <button class="tablinks" onclick="openCity(event, 'task1section2')">task1section2</button>
+                    <button class="tablinks" onclick="openCity(event, 'task1section3')">task1section3</button>
+                </div>
+            </div>
+            <button class="accordion">第二节</button>
+            <div class="panel">
+                <div class="tab">
+                    <div><button class="tablinks" onclick="openCity(event, 'task2section1')">task2section1</button></div>
+                    <div><button class="tablinks" onclick="openCity(event, 'task2section2')">task2section2</button></div>
+                    <div><button class="tablinks" onclick="openCity(event, 'task2section3')">task2section3</button></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="Home" class="tabcontent">
+                <h3>Home</h3>
+                <p>这里是该课程的简介</p>
+            </div>
+            <div id="task1section1" class="tabcontent">
+                <h3>第一次作业</h3>
+                <p>分块1</p>
+              </div>
+              
+              <div id="task1section2" class="tabcontent">
+                <h3>第一次作业</h3>
+                <p>分块2</p> 
+              </div>
+              
+              <div id="task1section3" class="tabcontent">
+                <h3>第一次作业</h3>
+                <p>分块3</p>
+              </div>
+              <div id="task2section1" class="tabcontent">
+                <h3>第二次作业</h3>
+                <p>分块1</p>
+              </div>
+              <div id="task2section2" class="tabcontent">
+                <h3>第二次作业</h3>
+                <p>分块2</p>
+              </div>
+              <div id="task2section3" class="tabcontent">
+                <h3>第二次作业</h3>
+                <p>分块3</p>
+              </div>
+        </div>
+        <div id="menu2">
+            <aside class="asideCard">
+                <ul>
+                    <li>
+                        <a href="alg.html">算法</a>
+                    </li>
+                    <li>
+                        <a href="CV.html">计算机视觉</a>
+                    </li>
+                    <li>
+                        <a href="VD.html">数据可视化</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

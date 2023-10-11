@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel</title>
+</head>
+<style>
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.column{
+    width: 100%;
+}
+
+.column img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px #999;
+    margin: 0em 2em 0em 2em;
+}
+</style>
+
+<script>
+    let col = document.getElementsByClassName("column");
+    var i,j;
+    for(i = 0;i < col.length;i++){
+        var im = col[i];
+        for(j = 0;j < im.length;j++){
+            im[j].style.width = col[i].clientWidth;
+        }
+    }
+</script>
+<body>
+    <div class="grid">
+        <div class="column">
+            <img src="../../img/imgTravel/6.jpg" />
+            <img src="../../img/imgTravel/5.jpg" />
+            <img src="../../img/imgTravel/4.jpg" />
+            <img src="../../img/imgTravel/3.jpg" />
+            <img src="../../img/imgTravel/2.jpg" />
+            <img src="../../img/imgTravel/15.jpg"/>
+        </div>
+        <div class="column">
+            <img src="../../img/imgTravel/1.jpg" />
+            <img src="../../img/imgTravel/7.jpg"/>
+            <img src="../../img/imgTravel/8.jpg"/>
+            <img src="../../img/imgTravel/9.jpg"/>
+            <img src="../../img/imgTravel/10.jpg"/>
+        </div>
+        <div class="column">
+            <img src="../../img/imgTravel/11.jpg" />
+            <img src="../../img/imgTravel/12.jpg"/>
+            <img src="../../img/imgTravel/13.jpg"/>
+            <img src="../../img/imgTravel/14.jpg"/>
+            <img src="../../img/imgTravel/16.jpg"/>
+        </div>
+    </div>    
+</body>
+</html>

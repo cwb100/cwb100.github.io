@@ -1,0 +1,215 @@
+html{
+  width: 100%;
+}
+
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(31,94,110,1) 100%);
+    background-repeat: no-repeat;
+    margin: 0px 10vw 0px 10vw; 
+    padding: 0;
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+}
+
+.card{
+    margin-top: 1.5em;
+    border-bottom: 1px solid black;
+}
+
+.cardHead{
+    position: relative;
+    display: grid;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 1.5em;
+    grid-template-columns: minmax(auto, auto) minmax(auto, auto);
+}
+
+.headImg{
+    width: 2em;
+}
+
+.headText{
+    font-size: 1em;
+    
+}
+
+.headNavLeft{
+  position: absolute;
+  bottom: 0;
+  left: 1em;
+}
+
+.headNavRight{
+  position: absolute;
+  bottom: 0;
+  right: 1em;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+a:active{
+    color: black;
+}
+
+.asideCard{
+    margin-left: 1em;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside ul li{  
+  border-bottom: 1px solid #549da0;
+  margin: 2em 0em 3em 0em;
+}
+
+.grid{
+    margin: 2em 2em 0em 0em;
+    display: grid;
+    grid-template-columns: minmax(auto, auto) 3fr 1fr;
+}
+
+
+/*************内部多界面*******************/
+
+
+/* 标签样式 */
+.tab {
+  background-color: rgba(255, 255, 255, 0);
+  margin-left: 1em;
+  margin-right: 1em;
+  float: left;
+  border-bottom: none;
+  height: 100%;
+}
+
+/* 为选项卡内的按钮设置样式 */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* 悬停时改变按钮的背景颜色 */
+.tab button:hover {
+  background-color: #619199;
+}
+
+/* 创建一个活动的/当前的“标签按钮”类 */
+.tab button.active {
+  background-color: #549da0;
+}
+
+/* 标签内容的样式 */
+.tabcontent {
+  margin: 3em 0em 0em 2em;
+  float: left;
+  padding: .3em;
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid #a3a3a3;
+}
+
+
+/***************手风琴侧边栏*******************/
+
+
+.home{
+    color: #444;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    padding-left: 18px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.accordion {
+    color: #444;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    padding-left: 18px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  
+  .accordion::before {
+    content: '\25B6';
+    color: #777;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .activeFirst::before {
+    content: "\25BC";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: rgba(255, 255, 255, 0);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+/**********响应式设计***********************/
+@media screen and (max-width:1150px) {
+  .grid{
+    margin: 2em 2em 0em 0em;
+    display: grid;
+    grid-template-columns: 250px minmax(auto, auto);
+  }
+  body{
+    margin: 0px 10vw 0px 0vw;
+  }
+  .asideCard{
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .asideCard ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+  }
+
+  .asideCard ul li{
+    border:none;
+    margin: none;
+    border-bottom: 1px solid #549da0;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  .grid{
+    display: flex;
+    flex-direction: column;
+  }
+}
