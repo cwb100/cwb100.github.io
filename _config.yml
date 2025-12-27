@@ -4,9 +4,9 @@ description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-permalink: ':title/'
+permalink: '/:year/:month/:day/:title/'
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "cwb100.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cwb100.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Banner settings
 video: mountains.mp4 # add banner video. Add your video file to the folder video
@@ -44,13 +44,10 @@ paginate_path: /page:num/
 
 # Build settings
 markdown: kramdown
-plugins_dir:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-gems:
-  - jekyll-paginate
-  - jekyll-sitemap
 
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
