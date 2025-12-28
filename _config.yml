@@ -1,5 +1,5 @@
-logo: # add logo name
-title: Enjoy Yourself
+logo: 壁<span>炉</span>
+title: 壁炉's Blog
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -8,18 +8,23 @@ permalink: '/:year/:month/:day/:title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cwb100.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
+timezone: Asia/Shanghai
+
+webrick:
+  hearders:
+    My-Header: FromBilu
+
+
 # Banner settings
-video: mountains.mp4 # add banner video. Add your video file to the folder video
-banner-title: # add banner title
-banner-desc: # add banner description
+video: delay1.mp4 # add banner video. Add your video file to the folder video
+banner-title: Seize the Day
+banner-desc: 知不足而奋进，望远山而前行
 
 # Author settings
 author-pic: face.jpg # your photo
-author-name: # your name
-about-author: # about author
-email: your-email@domain.com # your email
-phone: (496)-169-6557 # your pnone number
-website: https://dwayne.example.com # you website
+author-name: 壁炉
+about-author: 一个非常普通的小人物
+email: 2067156943@qq.com # your email
 
 # Social link
 google_url:    # add url link
@@ -30,7 +35,7 @@ dribbble_url:  # add url link
 facebook_url:  # add url link
 
 # Disqus
-discus_identifier: mr-brown # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
+discus_identifier: cwb100-github-io # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
 
 # Newsletter
 mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
