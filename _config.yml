@@ -40,6 +40,9 @@ discus_identifier: cwb100-github-io # add your discus identifier.  Not your user
 # Tracker
 analytics:
 
+sass:
+  sass_dir: _sass
+
 # Paginate
 paginate: 12
 paginate_path: /page:num/
