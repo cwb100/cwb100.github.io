@@ -1,14 +1,10 @@
+timezone: Asia/Shanghai
 logo: 壁<span>炉</span>
 title: 壁炉's Blog
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: 这里是壁炉，简单的记录生活和学习
 permalink: '/:year/:month/:day/:title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cwb100.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-
-timezone: Asia/Shanghai
 
 webrick:
   hearders:
@@ -24,7 +20,11 @@ banner-desc: 知不足而奋进，望远山而前行
 author-pic: face.jpg # your photo
 author-name: 壁炉
 about-author: 一个非常普通的小人物
-email: 2067156943@qq.com # your email
+formspree_email: xgovpdrg # your email
+email: 2067156943@qq.com
+
+# Newsletter
+newsletter: https://buttondown.com/api/emails/embed-subscribe/cwb100 # add your mailchimp url here
 
 # Social link
 google_url:    # add url link
@@ -36,9 +36,6 @@ facebook_url:  # add url link
 
 # Disqus
 discus_identifier: cwb100-github-io # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
-
-# Newsletter
-mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
 
 # Tracker
 analytics:

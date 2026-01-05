@@ -1,11 +1,16 @@
 
 <section class="newsletter" id="mc_embed_signup">
-  <h2 class="newsletter_title">Newsletter</h2>
-  <form action="//{{ site.mailchimp }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <label for="mce-EMAIL">Subscribe here to get our latest updates</label>
-    <div class="newsletter_box" id="mc_embed_signup_scroll">
-      <input type="email" name="EMAIL" placeholder="Email address" class="email_input" id="mce-EMAIL" required>
-      <input type="submit" value="Subscribe" name="subscribe" class="subscribe_btn" id="mc-embedded-subscribe">
-    </div>
-  </form>
+  <h2 class="newsletter_title">更新消息</h2>
+  <form
+  action="https://buttondown.com/api/emails/embed-subscribe/cwb100"
+  method="post"
+  class="embeddable-buttondown-form"
+  target="_blank" novalidate
+>
+  <label for="bd-email">输入你的邮件，以订阅最新消息</label>
+  <div class="newsletter_box">
+    <input type="email" name="email" id="bd-email" class="email_input" required/>
+    <input type="submit" value="订阅" class="subscribe_btn"/>
+  </div>
+</form>
 </section> <!-- End Section Newsletter -->
